@@ -69,8 +69,9 @@ export default function NeuralCanvas() {
           const q = particles[j]
           const dx = p.x - q.x
           const dy = p.y - q.y
-          const dist = Math.hypot(dx, dy)
-          if (dist < 140) {
+          const d2 = dx * dx + dy * dy
+          if (d2 < 19600) {
+            const dist = Math.sqrt(d2)
             const alpha = (1 - dist / 140) * 0.18
             const grad = ctx.createLinearGradient(p.x, p.y, q.x, q.y)
             grad.addColorStop(0, color(p, alpha))
@@ -87,11 +88,22 @@ export default function NeuralCanvas() {
       if (!prefersReduced) rafId = requestAnimationFrame(tick)
     }
 
-    resize()
-    if (!prefersReduced) tick()
-    window.addEventListener("resize", resize)
+    // Diferir el primer frame hasta que el navegador esté idle: el canvas es decorativo
+    // y no debe competir con el render del Hero (LCP) en dispositivos lentos.
+    let started = false
+    function start() {
+      if (started) return
+      started = true
+      resize()
+      if (!prefersReduced) tick()
+      window.addEventListener("resize", resize)
+    }
+    const hasIdle = "requestIdleCallback" in window
+    const idleId = hasIdle ? window.requestIdleCallback(start, { timeout: 2500 }) : window.setTimeout(start, 1200)
 
     return () => {
+      if (hasIdle) window.cancelIdleCallback(idleId)
+      else window.clearTimeout(idleId)
       window.removeEventListener("resize", resize)
       cancelAnimationFrame(rafId)
     }

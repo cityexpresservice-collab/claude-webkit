@@ -79,7 +79,7 @@ export default function DiagnosticoForm() {
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="empresa" className={labelClass}>
-            Empresa <span className="text-[#64748B] font-normal">(opcional)</span>
+            Empresa <span className="text-[#94A3B8] font-normal">(opcional)</span>
           </label>
           <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" autoComplete="organization" className={inputClass} />
         </div>
@@ -174,7 +174,7 @@ export default function DiagnosticoForm() {
           </>
         )}
       </button>
-      <p className="text-xs text-center text-[#475569]">
+      <p className="text-xs text-center text-[#94A3B8]">
         Sin spam. Tus datos solo se usan para preparar tu diagnóstico.
       </p>
     </form>

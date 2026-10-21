@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
               Esta política explica cómo Optima Technology recolecta, usa, protege y administra la información que
               compartes al visitar nuestro sitio o comunicarte con nosotros.
             </p>
-            <p className="text-sm text-[#64748B]">Última actualización: 19 de mayo de 2026</p>
+            <p className="text-sm text-[#94A3B8]">Última actualización: 19 de mayo de 2026</p>
           </div>
 
           {/* Sections */}
@@ -164,7 +164,7 @@ export default function PrivacyPolicy() {
 
             {/* Disclaimer */}
             <div className="card-glow bg-[#152033]/70 backdrop-blur-sm border border-[#334155] rounded-xl p-6">
-              <p className="text-sm text-[#64748B] leading-relaxed relative z-10">
+              <p className="text-sm text-[#94A3B8] leading-relaxed relative z-10">
                 <strong className="text-[#94A3B8]">Nota:</strong> Esta política es una plantilla general para uso
                 informativo y comercial. Para cumplimiento legal específico según país, industria o tipo de datos
                 tratados, se recomienda revisión legal.
@@ -174,7 +174,7 @@ export default function PrivacyPolicy() {
 
           {/* CTA bottom */}
           <div className="border-t border-[#334155] pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-            <p className="text-sm text-[#64748B]">¿Tienes preguntas? Escríbenos.</p>
+            <p className="text-sm text-[#94A3B8]">¿Tienes preguntas? Escríbenos.</p>
             <Link
               href="/#contacto"
               className="btn-grad inline-flex items-center gap-2 text-white font-semibold h-10 px-6 rounded-lg text-sm"
@@ -187,7 +187,7 @@ export default function PrivacyPolicy() {
 
         {/* Footer */}
         <footer className="border-t border-[#334155] py-8 px-6 bg-[#0B1220]/80 backdrop-blur-sm">
-          <div className="mx-auto max-w-4xl flex justify-center text-xs text-[#475569]">
+          <div className="mx-auto max-w-4xl flex justify-center text-xs text-[#94A3B8]">
             <span>© {new Date().getFullYear()} Optima Technology. Todos los derechos reservados.</span>
           </div>
         </footer>

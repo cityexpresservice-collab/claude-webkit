@@ -182,9 +182,9 @@ export default function Home() {
                 <FadeInItem key={v.title}>
                   <div className="card-glow bg-[#152033]/70 backdrop-blur-sm border border-[#334155] rounded-xl p-6 flex flex-col gap-3 h-full">
                     <span className="text-3xl relative z-10" role="img" aria-label={v.title}>{v.emoji}</span>
-                    <h4 className="text-base font-semibold text-[#F1F5F9] relative z-10" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                    <h3 className="text-base font-semibold text-[#F1F5F9] relative z-10" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                       {v.title}
-                    </h4>
+                    </h3>
                     <p className="text-xs text-[#94A3B8] leading-relaxed relative z-10">{v.desc}</p>
                   </div>
                 </FadeInItem>
@@ -211,7 +211,7 @@ export default function Home() {
               {testimonials.map((t) => (
                 <FadeInItem key={t.name}>
                   <article className="card-glow bg-[#152033]/70 backdrop-blur-sm border border-[#334155] rounded-2xl p-8 flex flex-col gap-6 h-full">
-                    <div className="flex gap-1 relative z-10" aria-label="5 de 5 estrellas">
+                    <div className="flex gap-1 relative z-10" role="img" aria-label="5 de 5 estrellas">
                       {Array.from({ length: 5 }).map((_, j) => (
                         <Star key={j} size={16} className="text-[#FFB347] fill-[#FFB347]" aria-hidden="true" />
                       ))}
@@ -219,7 +219,7 @@ export default function Home() {
                     <blockquote className="text-[#CBD5E1] leading-relaxed flex-1 relative z-10">&ldquo;{t.content}&rdquo;</blockquote>
                     <div className="relative z-10">
                       <div className="text-sm font-semibold text-[#F1F5F9]">{t.name}</div>
-                      <div className="text-xs text-[#64748B]">{t.role}</div>
+                      <div className="text-xs text-[#94A3B8]">{t.role}</div>
                     </div>
                   </article>
                 </FadeInItem>
@@ -288,7 +288,7 @@ export default function Home() {
                 <a href="#" className="w-fit" aria-label="Optima Technology inicio">
                   <Logo size="md" />
                 </a>
-                <p className="text-xs text-[#64748B] leading-relaxed mt-2">
+                <p className="text-xs text-[#94A3B8] leading-relaxed mt-2">
                   Automatización, IA y experiencias digitales para empresas que quieren crecer con mejores sistemas.
                 </p>
                 <address className="not-italic text-xs text-[#94A3B8] leading-relaxed flex flex-col gap-1">
@@ -341,7 +341,7 @@ export default function Home() {
                       target={external ? "_blank" : undefined}
                       rel={external ? "noopener noreferrer" : undefined}
                       aria-label={label}
-                      className="w-9 h-9 bg-[#152033] border border-[#334155] rounded-lg flex items-center justify-center text-[#64748B] hover:text-[#FFB347] hover:border-[#1E8BFF]/40 transition-all"
+                      className="w-9 h-9 bg-[#152033] border border-[#334155] rounded-lg flex items-center justify-center text-[#94A3B8] hover:text-[#FFB347] hover:border-[#1E8BFF]/40 transition-all"
                     >
                       <Icon size={16} />
                     </a>
@@ -353,7 +353,7 @@ export default function Home() {
 
             <hr className="border-[#334155]/50" />
 
-            <div className="flex justify-center text-xs text-[#475569]">
+            <div className="flex justify-center text-xs text-[#94A3B8]">
               <span>© {new Date().getFullYear()} Optima Technology. Todos los derechos reservados.</span>
             </div>
           </div>

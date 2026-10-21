@@ -66,7 +66,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="company" className="text-sm font-medium text-[#CBD5E1]">
-            Empresa <span className="text-[#64748B] font-normal">(opcional)</span>
+            Empresa <span className="text-[#94A3B8] font-normal">(opcional)</span>
           </label>
           <input
             id="company"
@@ -95,7 +95,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="phone" className="text-sm font-medium text-[#CBD5E1]">
-            Teléfono <span className="text-[#64748B] font-normal">(opcional)</span>
+            Teléfono <span className="text-[#94A3B8] font-normal">(opcional)</span>
           </label>
           <input
             id="phone"
@@ -149,7 +149,7 @@ export default function ContactForm() {
           </>
         )}
       </button>
-      <p className="text-xs text-center text-[#475569]">Sin spam. Te respondemos en menos de 24 horas.</p>
+      <p className="text-xs text-center text-[#94A3B8]">Sin spam. Te respondemos en menos de 24 horas.</p>
     </form>
   )
 }

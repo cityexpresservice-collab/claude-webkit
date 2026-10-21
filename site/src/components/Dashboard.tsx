@@ -46,7 +46,7 @@ export default function Dashboard() {
             <div className="text-lg font-bold text-[#F1F5F9]" style={{ fontFamily: "var(--font-space-grotesk)" }}>
               Centro de Automatización
             </div>
-            <div className="text-xs text-[#64748B] mt-1">Procesos activos en tiempo real</div>
+            <div className="text-xs text-[#94A3B8] mt-1">Procesos activos en tiempo real</div>
           </div>
           <div className="flex items-center gap-1.5 bg-[#FF9800]/10 border border-[#FF9800]/20 px-2.5 py-1 rounded-full">
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF9800] pulse-dot"></span>
@@ -56,14 +56,14 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-2 gap-3 relative z-10">
           <div className="bg-[#0B1220] border border-[#334155] rounded-xl p-4">
-            <div className="text-[10px] text-[#64748B] uppercase tracking-wide mb-2">Leads atendidos</div>
+            <div className="text-[10px] text-[#94A3B8] uppercase tracking-wide mb-2">Leads atendidos</div>
             <div className="text-3xl text-[#F1F5F9]">
               <Counter target={247} />
             </div>
             <div className="progress-bar mt-3"><span style={{ width: "82%" }}></span></div>
           </div>
           <div className="bg-[#0B1220] border border-[#334155] rounded-xl p-4">
-            <div className="text-[10px] text-[#64748B] uppercase tracking-wide mb-2">Ahorro operativo</div>
+            <div className="text-[10px] text-[#94A3B8] uppercase tracking-wide mb-2">Ahorro operativo</div>
             <div className="text-3xl text-[#F1F5F9]">
               <Counter target={68} suffix="%" />
             </div>
