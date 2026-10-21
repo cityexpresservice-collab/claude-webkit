@@ -29,6 +29,8 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
         <img
           src="/logo.png"
           alt="Optima Technology"
+          width={Math.round((s.height * 332) / 111)}
+          height={s.height}
           style={{ height: s.height, width: "auto", display: "block" }}
           onError={() => setUsePng(false)}
         />

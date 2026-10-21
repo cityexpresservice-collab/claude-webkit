@@ -77,7 +77,7 @@ export default function DiagnosticoPage() {
       </div>
 
       <footer className="border-t border-[#334155]/50">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex justify-center text-xs text-[#475569]">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex justify-center text-xs text-[#94A3B8]">
           <span>© {new Date().getFullYear()} Optima Technology. Todos los derechos reservados.</span>
         </div>
       </footer>
