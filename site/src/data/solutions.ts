@@ -12,4 +12,10 @@ export const solutions: Solution[] = [
     description: "Empleado Digital para abogados y firmas jurídicas.",
     href: "https://www.optima-tech.co/juridico",
   },
+  {
+    icon: "📊",
+    title: "Contadores",
+    description: "Empleado Digital para contadores y firmas contables.",
+    href: "https://www.optima-tech.co/contadores",
+  },
 ]

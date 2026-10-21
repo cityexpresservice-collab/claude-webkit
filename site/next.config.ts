@@ -30,6 +30,8 @@ const nextConfig: NextConfig = {
     return [
       { source: "/juridico", destination: "/juridico/index.html" },
       { source: "/juridico/", destination: "/juridico/index.html" },
+      { source: "/contadores", destination: "/contador/index.html" },
+      { source: "/contadores/", destination: "/contador/index.html" },
     ];
   },
 };
